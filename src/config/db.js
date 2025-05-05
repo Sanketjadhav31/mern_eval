@@ -1,11 +1,9 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import evn from '../env';
 import product from '../models/product.js';
+import {process} from '.env';
+import module from 'module';
 
-
-require('mongoose');
-const dotenv = require('dotenv');
 dotenv.config();
 
 const db = process.env.mongo_url || 'mongo_url=mongodb+srv://sanketjadhav31:Sanket%40310@merneval.2jcti9j.mongodb.net/?retryWrites=true&w=majority&appName=merneval';
