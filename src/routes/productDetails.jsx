@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { items } from '../models/product.js';
+
  
 function ProductDetails() {
     const [search, setSearch] = React.useState('');
@@ -10,6 +11,7 @@ function ProductDetails() {
     if (!product) {
         return <div>Product not found</div>;
     }
+    
     return (
         <div>
             <nav>
@@ -29,6 +31,7 @@ function ProductDetails() {
          ))}
 
          </div>
+
         </div>
     );
 }
